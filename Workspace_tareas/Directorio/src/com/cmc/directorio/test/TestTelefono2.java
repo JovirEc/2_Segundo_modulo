@@ -11,7 +11,7 @@ public class TestTelefono2 {
 		AdminTelefono at = new AdminTelefono();
 		at.activarMensajeria(telf);
 		
-		System.out.println("Operadora: "+telf.getOperadora()+" - Numero: "+telf.getNumero()+" - Código: "+telf.getCodigo()+" Tiene whatsapp?: "+telf.getTieneWhatsapp());
+		System.out.println("Operadora: "+telf.getOperadora()+" - Numero: "+telf.getNumero()+" - Código: "+telf.getCodigo()+" Tiene whatsapp?: "+telf.isTieneWhatsapp());
 	}
 
 }
