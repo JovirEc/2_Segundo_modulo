@@ -2,7 +2,8 @@ package com.clearminds.componentes;
 
 public class Celda {
 //ATRIBUTOS
-	private Producto producto;
+	//private Producto producto;
+	Producto producto = new Producto();
 	private int stock;
 	private String codigo;
 	

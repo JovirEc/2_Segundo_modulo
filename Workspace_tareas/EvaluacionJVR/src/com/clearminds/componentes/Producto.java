@@ -11,6 +11,9 @@ public class Producto {
 	this.precio = precio;
 	this.codigo = codigo;
 	}
+	public Producto() {
+		
+	}
 //GETTERS SETTERS
 	public String getNombre() {
 		return nombre;

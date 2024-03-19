@@ -47,12 +47,23 @@ public class MaquinaDulces {
 		Celda celdaRecuperada = buscarCelda(cod);
 		celdaRecuperada.ingresarProducto(prod, stk);
 	}
-	
+	public void imprimirProductos(Celda celda) {
+		System.out.println("------------------**-CELDA "+celda.getCodigo()+"-**--");
+		System.out.println("Stock actual: "+celda.getStock());
+		if(celda.getStock() != 0) {
+			System.out.println("Nombre producto: "+celda.getProducto().getNombre());
+			System.out.println("Precio producto: "+celda.getProducto().getPrecio());
+			System.out.println("Código producto: "+celda.getProducto().getCodigo());
+		}else {
+			System.out.println("¡La celda no tiene producto!");
+		}
+		
+	}
 	public void mostrarProductos () {
-		System.out.println("----"+celda1.getProducto().getNombre()+"----");
-		System.out.println("Código: "+celda1.getCodigo());
-		System.out.println("Stock: "+celda1.getStock());
-		System.out.println("Precio: "+celda1.getProducto().getPrecio());
+		imprimirProductos(celda1);
+		imprimirProductos(celda2);
+		imprimirProductos(celda3);
+		imprimirProductos(celda4);
 		System.out.println("");
 		System.out.println("--------------");
 		System.out.println("Saldo: "+saldo);
