@@ -61,6 +61,7 @@ public class Contacto {
 		AdminTelefono telf = new AdminTelefono();
 		telf.activarMensajeria(telefono);
 		System.out.println("¿Tiene Whatsapp?: "+telefono.isTieneWhatsapp());
+		System.out.println("¿Está activo?: "+activo);
 		System.out.println("------------------");
 	}
 }

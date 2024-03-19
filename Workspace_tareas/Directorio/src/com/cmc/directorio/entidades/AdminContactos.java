@@ -25,6 +25,8 @@ public class AdminContactos {
 		Telefono telf1 = cont1.getTelefono();
 		if(telf1.isTieneWhatsapp() == true) {
 			cont1.setActivo(true);
+		}else {
+			cont1.setActivo(false);
 		}
 	}
 	
