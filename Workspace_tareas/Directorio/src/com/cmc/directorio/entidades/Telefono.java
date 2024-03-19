@@ -39,8 +39,12 @@ public class Telefono {
 		this.codigo = codigo;
 	}
 
-	public boolean isTieneWhatsapp() {
-		return tieneWhatsapp;
+	public boolean getTieneWhatsapp() {
+		if (tieneWhatsapp = false) {
+			return false;
+		}else {
+			return true;
+		}
 	}
 
 	public void setTieneWhatsapp(boolean tieneWhatsapp) {
