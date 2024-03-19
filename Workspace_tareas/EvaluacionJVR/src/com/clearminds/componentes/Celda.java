@@ -32,10 +32,9 @@ public class Celda {
 		this.codigo = codigo;
 	}
 //METODOS
-	public void ingresarProducto (Producto prod1, int stck1) {
-		producto = prod1;
-		stock = stck1;
+	public void ingresarProducto (Producto prod, int stck) {
+		producto = prod;
+		stock = stck;
 	}
-	
 	
 }
