@@ -58,6 +58,8 @@ public class Contacto {
 		System.out.println("Telefono: "+telefono.getNumero());
 		System.out.println("Operadora: "+telefono.getOperadora());
 		System.out.println("Código: "+telefono.getCodigo());
+		AdminTelefono telf = new AdminTelefono();
+		telf.activarMensajeria(telefono);
 		System.out.println("¿Tiene Whatsapp?: "+telefono.isTieneWhatsapp());
 		System.out.println("------------------");
 	}
