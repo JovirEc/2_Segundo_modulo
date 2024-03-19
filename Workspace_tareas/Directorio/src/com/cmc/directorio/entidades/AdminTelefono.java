@@ -20,7 +20,6 @@ public class AdminTelefono {
 		if(telf3.getOperadora() == "Movi") {
 			contador = contador + 1;
 		}
-		
 		return contador;
 	}
 
