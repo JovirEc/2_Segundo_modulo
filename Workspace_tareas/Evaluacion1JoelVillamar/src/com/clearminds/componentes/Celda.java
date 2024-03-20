@@ -8,7 +8,7 @@ public class Celda {
 	
 //CONSTRUCTOR
 	public Celda(String codigo) {
-//*********************************** producto = new Producto();
+/************************************* producto = new Producto(); */ 
 		this.codigo = codigo;
 	}
 	

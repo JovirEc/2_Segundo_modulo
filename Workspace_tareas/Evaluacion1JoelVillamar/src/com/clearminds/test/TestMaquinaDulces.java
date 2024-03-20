@@ -11,5 +11,6 @@ public class TestMaquinaDulces {
         maquina.agregarCelda(new Celda("C"));
         maquina.agregarCelda(new Celda("D"));
         maquina.mostrarConfiguracion();
+        
     }
 }
