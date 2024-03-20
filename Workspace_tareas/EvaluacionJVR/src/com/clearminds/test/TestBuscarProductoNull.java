@@ -13,7 +13,7 @@ public class TestBuscarProductoNull {
 		
 		Producto prod=maquina.buscarProductoEnCelda("A1");
 		System.out.println("Producto encontrado:"+prod.getNombre());
-		
+		//NullPointer en linea 15 al intentar obtener un nombre de un producto aún no creado.
 		
 		
 		
