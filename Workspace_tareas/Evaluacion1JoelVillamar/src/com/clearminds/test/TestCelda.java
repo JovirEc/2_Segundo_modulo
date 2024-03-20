@@ -6,7 +6,8 @@ public class TestCelda {
 	public static void main(String[] args) {
 		Celda celda=new Celda("A1");
 		System.out.println(celda.getProducto().getNombre());//EN ESTA LINEA ES EL ERROR
-		//".getProducto" esta null, por esta razon da NullPointerException
+		//".getProducto" esta null, por esta razon da NullPointerException.
+		//Está tratando de llamar a un producto que está vacío, dado que no se le ha pasado los parámetros de "Producto"
 		
 		System.out.println("CELDA:"+celda.getProducto());
 		System.out.println("Nombre Producto:"+celda.getProducto().getNombre());

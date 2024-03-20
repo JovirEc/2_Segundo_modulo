@@ -11,8 +11,8 @@ public class Producto {
 	this.codigo = codigo;
 	}
 	
-	/*public Producto() {
-	}*/
+	public Producto() {
+	}
 //GETTERS SETTERS
 	public String getNombre() {
 		return nombre;
