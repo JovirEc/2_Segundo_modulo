@@ -15,7 +15,7 @@ public class TestBuscarProducto {
 		System.out.println("Producto encontrado:"+productoEncontrado.getNombre());
 		
 		Producto prod=maquina.buscarProductoEnCelda("A1");
-		System.out.println("Producto encontrado:"+prod);
+		System.out.println("Producto encontrado:"+prod.getNombre());
 		
 		
 		
