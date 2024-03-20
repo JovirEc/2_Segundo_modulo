@@ -3,12 +3,13 @@ package com.clearminds.componentes;
 public class Celda {
 //ATRIBUTOS
 	//private Producto producto;
-	Producto producto = new Producto();
+	private Producto producto;
 	private int stock;
 	private String codigo;
 	
 //CONSTRUCTOR
 	public Celda(String codigo) {
+		producto = new Producto();
 		this.codigo = codigo;
 	}
 	

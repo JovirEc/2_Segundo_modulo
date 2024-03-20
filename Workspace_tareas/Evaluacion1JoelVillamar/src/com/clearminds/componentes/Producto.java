@@ -1,7 +1,6 @@
 package com.clearminds.componentes;
 
 public class Producto {
-//ATRIBUTOS
 	private String nombre;
 	private double precio;
 	private String codigo;
@@ -12,8 +11,8 @@ public class Producto {
 	this.codigo = codigo;
 	}
 	
-	public Producto() {
-	}
+	/*public Producto() {
+	}*/
 //GETTERS SETTERS
 	public String getNombre() {
 		return nombre;
@@ -43,5 +42,4 @@ public class Producto {
 	public void disminuirPrecio(double descuento) {
 		this.precio = precio - descuento;
 	}
-	
 }
