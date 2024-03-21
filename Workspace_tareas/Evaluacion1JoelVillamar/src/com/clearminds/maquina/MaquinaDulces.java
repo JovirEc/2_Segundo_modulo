@@ -57,14 +57,15 @@ public class MaquinaDulces {
 		Celda celdaX;
 		for(int i = 0; i<celdas.size(); i++) {
 			celdaX = celdas.get(i);
-			System.out.println("");
-			System.out.print("Celda:"+celdaX.getCodigo());
 			if(celdaX.getStock() != 0) {
-				System.out.print(" Stock:"+celdaX.getStock()+
-						" Producto:"+celdaX.getProducto().getCodigo()+
+				System.out.println("Celda:"+celdaX.getCodigo()+
+						" Stock:"+celdaX.getStock()+
+						" Producto:"+celdaX.getProducto().getNombre()+
 						" Precio:"+celdaX.getProducto().getPrecio());
 			}else {
-				System.out.print(" Sin Producto asignado");
+				System.out.println("Celda:"+celdaX.getCodigo()+
+						" Stock:"+celdaX.getStock()+
+						" Sin Producto asignado");
 			}				
 		}
 	}
@@ -101,5 +102,10 @@ public class MaquinaDulces {
 			
 		}
 		return celdaElemento; 
+	}
+	
+	public void incrementarProductos(String codigoC, int numItems) {
+		Celda celdaEncontrada = buscarCeldaProducto(codigoC);
+		celdaEncontrada.setStock(numItems);
 	}
 }
