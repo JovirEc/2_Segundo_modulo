@@ -34,14 +34,16 @@ public class MaquinaDulces {
 	}
 	
 	public Celda buscarCelda(String codigoC) {
+		Celda celdaEncontrada = null;
 		Celda celdaPrincipal = null;
 		for(int i = 0; i < celdas.size(); i++) {
 			celdaPrincipal = celdas.get(i);
 			if (codigoC.equals(celdaPrincipal.getCodigo())) {
+				celdaEncontrada = celdaPrincipal;
 				return celdaPrincipal;
 			}
 		}
-		return celdaPrincipal;
+		return celdaEncontrada;
 	}
 	
 }
