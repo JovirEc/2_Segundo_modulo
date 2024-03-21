@@ -1,6 +1,8 @@
 package com.clearminds.maquina;
 import java.util.ArrayList;
+
 import com.clearminds.componentes.Celda;
+import com.clearminds.componentes.Producto;
 
 public class MaquinaDulces {
 	
@@ -46,4 +48,27 @@ public class MaquinaDulces {
 		return celdaEncontrada;
 	}
 	
+	public void cargarProducto(Producto producto, String codigoC, int numItems) {
+		Celda celdaRecuperada = buscarCelda(codigoC);
+		celdaRecuperada.ingresarProducto(producto, numItems);
+	}
+	
+	public void mostrarProductos() {
+		Celda celdaX;
+		for(int i = 0; i<celdas.size(); i++) {
+			celdaX = celdas.get(i);
+			System.out.println("");
+			System.out.print("Celda:"+celdaX.getCodigo());
+			if(celdaX.getStock() != 0) {
+				System.out.print(" Stock:"+celdaX.getStock()+
+						" Producto:"+celdaX.getProducto().getCodigo()+
+						" Precio:"+celdaX.getProducto().getPrecio());
+			}else {
+				System.out.print(" Sin Producto asignado");
+			}
+								
+		}
+	}
+	
+
 }
