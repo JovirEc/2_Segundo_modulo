@@ -65,10 +65,24 @@ public class MaquinaDulces {
 						" Precio:"+celdaX.getProducto().getPrecio());
 			}else {
 				System.out.print(" Sin Producto asignado");
-			}
-								
+			}				
 		}
 	}
 	
+	
+	public Producto buscarProductoEnCelda(String codigoC) {
+		Celda elementoCelda = buscarCelda(codigoC);
+		Producto productoEncontrado = null;
+		if (elementoCelda != null) {
+			productoEncontrado = elementoCelda.getProducto();
+			return productoEncontrado;
+		}
+		return productoEncontrado;
+	}
+	
+	public double consultarPrecio(String codigoC) {
+		Celda elementoCelda = buscarCelda(codigoC);
+		return elementoCelda.getProducto().getPrecio();
+	}
 
 }
