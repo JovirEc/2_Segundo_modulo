@@ -68,8 +68,9 @@ public class MaquinaDulces {
 						" Sin Producto asignado");
 			}				
 		}
+		System.out.println("");
+		System.out.println("Saldo: "+saldo);
 	}
-	
 	
 	public Producto buscarProductoEnCelda(String codigoC) {
 		Celda elementoCelda = buscarCelda(codigoC);
@@ -107,5 +108,26 @@ public class MaquinaDulces {
 	public void incrementarProductos(String codigoC, int numItems) {
 		Celda celdaEncontrada = buscarCeldaProducto(codigoC);
 		celdaEncontrada.setStock(numItems);
+	}
+	
+	public void vender(String codigoC) {
+		Celda celdaX = buscarCelda(codigoC);
+		double precioX;
+		
+		celdaX.setStock(celdaX.getStock()-1);
+		precioX = celdaX.getProducto().getPrecio();
+		saldo = saldo + precioX;
+	}
+	
+	public double venderConCambio(String codigoC, double billete) {
+		Celda celdaX = buscarCelda(codigoC);
+		double precioX = celdaX.getProducto().getPrecio();
+		double vuelto;
+		
+		celdaX.setStock(celdaX.getStock()-1);
+		saldo += precioX;
+		vuelto = billete - saldo;
+		
+		return vuelto;
 	}
 }
