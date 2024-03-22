@@ -1,17 +1,23 @@
 package com.krakedev.evaluacion;
 
+import java.util.ArrayList;
+
 public class Contacto {
 
 		private String cedula;
 		private String nombre;
 		private String apellido;
 		private Direccion direccion;
+		private ArrayList <Telefono> telefonos;
 		
+		
+
 		//---CONSTRUCTOR
 		public Contacto(String cedula, String nombre, String apellido) {
 			this.cedula = cedula;
 			this.nombre = nombre;
 			this.apellido = apellido;
+			telefonos = new ArrayList<Telefono>();
 		}
 		
 		//---GETTERS SETTERS
@@ -39,6 +45,12 @@ public class Contacto {
 		public void setDireccion(Direccion direccion) {
 			this.direccion = direccion;
 		}
+		public ArrayList<Telefono> getTelefonos() {
+			return telefonos;
+		}
+		public void setTelefonos(ArrayList<Telefono> telefonos) {
+			this.telefonos = telefonos;
+		}
 		
 		//---METODO
 		public void imprimir() {
@@ -57,6 +69,19 @@ public class Contacto {
 				System.out.println("No tiene asociada una dirección.");
 			}
 			System.out.println("");
+		}
+		
+		public void agregarTelefono(Telefono telefono) {
+			telefonos.add(telefono);
+		}
+		
+		public void mostrarTelefonos() {
+			System.out.println("Teléfonos con estado 'C':");
+			for(Telefono telefono : telefonos) {
+				if ("C".equals(telefono.getEstado())) {
+					System.out.println("Numero: "+telefono.getNumero()+", Tipo: "+telefono.getTipo());
+				}
+			}
 		}
 		
 		
