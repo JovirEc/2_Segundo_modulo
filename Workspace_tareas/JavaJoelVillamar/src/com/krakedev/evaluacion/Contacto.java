@@ -84,5 +84,14 @@ public class Contacto {
 			}
 		}
 		
+		public ArrayList<Telefono> recuperarIncorrectos(){
+			ArrayList<Telefono> tlfError = new ArrayList<Telefono>();
+			for(Telefono telefonoX : telefonos) {
+				if("E".equals(telefonoX.getEstado())) {
+					tlfError.add(telefonoX);
+				}
+			}
+			return tlfError;
+		}
 		
 }
