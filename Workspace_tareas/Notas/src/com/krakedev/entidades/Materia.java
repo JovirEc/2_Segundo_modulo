@@ -9,7 +9,9 @@ public class Materia {
 		this.nombre = nombre;
 	}
 	
-	//public Materia (){}
+	public Materia (){
+		
+	}
 	
 	//GETTER SETTERS
 	public String getCodigo() {

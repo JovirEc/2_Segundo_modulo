@@ -6,18 +6,19 @@ public class Estudiante {
 	private String nombre;
 	private String apellido;
 	private String cedula;
-	private ArrayList<Nota> notas; //= new ArrayList<Nota>();
+	private ArrayList<Nota> notas;
 	
 	//CONSTRUCTOR
 	
-	public Estudiante(String nombre, String apellido, String cedula) {
+	public Estudiante(String cedula, String nombre, String apellido) {
+		notas = new ArrayList<Nota>();
 		this.nombre   = nombre;
 		this.apellido = apellido;
 		this.cedula   = cedula;
 	}
-	/*public Estudiante () {
-		
-	}*/
+	public Estudiante () {
+		notas = new ArrayList<Nota>();
+	}
 
 	//GETTER SETTERS
 	public String getNombre() {
@@ -60,11 +61,9 @@ public class Estudiante {
 		}
 		
 		if(existeNota == false) {
-			if(nuevaNota.getCalificacion() >= 0 && nuevaNota.getCalificacion() >=10) {
+			if(nuevaNota.getCalificacion() >= 0 && nuevaNota.getCalificacion() <=10) {
 				notas.add(nuevaNota);
 			}
-		}else {
-			System.out.println("Materia ya registrada");
 		}
 	}
 	
@@ -105,20 +104,17 @@ public class Estudiante {
 	}
 	
 	public void mostrar() {
-		String materias = "";
-		System.out.println("Nombre:"+nombre+
+		Nota notaX = null;
+		System.out.print("Nombre:"+nombre+
 					" Apellido:"+apellido+
 					" Cédula:"+cedula+
-					" Notas:[ Materia:["+materias);
-		
+					" Notas:[");
 		for(int i=0; i<notas.size(); i++) {
-			Nota notaX = notas.get(i);
-			String codigoX = notaX.getMateria().getCodigo();
-			String nombreX = notaX.getMateria().getNombre();
-			double calificacionX = notaX.getCalificacion();
-			
-			materias = materias + " Código:"+codigoX+" Nombre:"+nombreX+" Calificación:"+calificacionX;
+			notaX = notas.get(i);
+			notaX.mostrar();
 		}
+		System.out.print("]");
 	}
+	
 	
 }

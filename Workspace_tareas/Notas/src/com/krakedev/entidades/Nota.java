@@ -3,16 +3,19 @@ package com.krakedev.entidades;
 public class Nota {
 
 	//ATRIBUTOS
-		private Materia materia; // new Materia();
+		private Materia materia;
 		private double calificacion;
 
 	//CONSTRUCTOR
 	public Nota(Materia materia, double calificacion) {
+		//materia = new Materia();
 		this.materia = materia;
 		this.calificacion = calificacion;
 	}
 	
-	//public Nota(){}
+	public Nota(){
+		//materia = new Materia();
+	}
 	
 	//GETTER SETTERS
 	public Materia getMateria() {
@@ -33,9 +36,8 @@ public class Nota {
 		
 	//METODOS
 	public void mostrar() {
-		System.out.println("Materia ["
-						+" Codigo:"+materia.getCodigo()+
-						" Nombre:"+materia.getNombre()+
-						"] Calificación:"+calificacion);
+		System.out.print(" Materia "+materia.getNombre()+" ["+
+						"Codigo:"+materia.getCodigo()+
+						" Calificación:"+calificacion+"]");
 	}
 }
