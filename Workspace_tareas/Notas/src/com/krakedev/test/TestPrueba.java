@@ -20,7 +20,12 @@ public class TestPrueba {
 		estudiante1.agregarNota(nota2);
 		
 		estudiante1.mostrar();
+		estudiante1.modificarNota("FOD2", 7.00);
 		
+		System.out.println("");
+		System.out.println("--Despues de Modificar--");
+		
+		estudiante1.mostrar();
 		/*estudiante.agregarNota(nota1);
 		estudiante.modificarNota("3", 10.00);
 		estudiante.mostrar();*/

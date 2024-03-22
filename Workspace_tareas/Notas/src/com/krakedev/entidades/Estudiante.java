@@ -81,7 +81,7 @@ public class Estudiante {
 		
 		if(notaEncontrada != null) {
 			if(nuevaNota >= 0 && nuevaNota <= 10) {
-				notaX.setCalificacion(nuevaNota);
+				notaEncontrada.setCalificacion(nuevaNota);
 			}
 		}else {
 			System.out.println("No se encontró el código");
@@ -113,7 +113,7 @@ public class Estudiante {
 			notaX = notas.get(i);
 			notaX.mostrar();
 		}
-		System.out.print("]");
+		System.out.println("]");
 	}
 	
 	
