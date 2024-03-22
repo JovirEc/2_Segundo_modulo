@@ -24,6 +24,4 @@ public class Direccion {
 		this.calleSecundaria = calleSecundaria;
 	}
 	
-	
-	
 }
