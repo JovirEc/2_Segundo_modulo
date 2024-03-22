@@ -105,10 +105,20 @@ public class Estudiante {
 	}
 	
 	public void mostrar() {
+		String materias = "";
 		System.out.println("Nombre:"+nombre+
 					" Apellido:"+apellido+
 					" Cédula:"+cedula+
-					" Notas:[ Materia:[Código"+); //ITERAR LOS ARRAYLIST
+					" Notas:[ Materia:["+materias);
+		
+		for(int i=0; i<notas.size(); i++) {
+			Nota notaX = notas.get(i);
+			String codigoX = notaX.getMateria().getCodigo();
+			String nombreX = notaX.getMateria().getNombre();
+			double calificacionX = notaX.getCalificacion();
+			
+			materias = materias + " Código:"+codigoX+" Nombre:"+nombreX+" Calificación:"+calificacionX;
+		}
 	}
 	
 }
