@@ -48,19 +48,14 @@ public class Contacto {
 			System.out.println("Cedula: "+cedula);
 			System.out.println("Nombre: "+nombre);
 			System.out.println("Apellido: "+apellido);
-			System.out.println("Dirección: ");
+			
 			if(direccion != null) {
-				callePrincipal = direccion.getCallePrincipal();
+				System.out.println("Dirección: ");
+				System.out.println("  Calle Principal:  "+callePrincipal);
+				System.out.println("  Calle Secundaria: "+calleSecundaria);
 			}else {
-				callePrincipal = "No existe";
+				System.out.println("No tiene asociada una dirección.");
 			}
-			System.out.println("  Calle Principal:  "+callePrincipal);
-			if(direccion != null) {
-				calleSecundaria = direccion.getCalleSecundaria();
-			}else {
-				calleSecundaria = "No existe";
-			}
-			System.out.println("  Calle Secundaria: "+calleSecundaria);
 			System.out.println("");
 		}
 		
