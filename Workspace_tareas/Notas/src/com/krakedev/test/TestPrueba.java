@@ -54,6 +54,9 @@ public class TestPrueba {
 		System.out.println("");
 		paraleloA.mostrar();
 		
+		double promedioCurso = paraleloA.calcularPromedioCurso();
+		System.out.println("");
+		System.out.println("Promedio del curso: "+promedioCurso);
 
 	}
 
