@@ -54,8 +54,6 @@ public class Contacto {
 		
 		//---METODO
 		public void imprimir() {
-			String callePrincipal = "";
-			String calleSecundaria = "";
 			System.out.println("--Información del Contacto--");
 			System.out.println("Cedula: "+cedula);
 			System.out.println("Nombre: "+nombre);
@@ -63,8 +61,8 @@ public class Contacto {
 			
 			if(direccion != null) {
 				System.out.println("Dirección: ");
-				System.out.println("  Calle Principal:  "+callePrincipal);
-				System.out.println("  Calle Secundaria: "+calleSecundaria);
+				System.out.println("  Calle Principal:  "+direccion.getCallePrincipal());
+				System.out.println("  Calle Secundaria: "+direccion.getCallePrincipal());
 			}else {
 				System.out.println("No tiene asociada una dirección.");
 			}

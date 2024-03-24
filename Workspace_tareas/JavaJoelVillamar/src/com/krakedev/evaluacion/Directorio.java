@@ -26,8 +26,14 @@ public class Directorio {
 	
 	//METODOS
 	public boolean agregarContacto(Contacto contacto) {
-		contactos.add(contacto);
-		return true;
+		Contacto existeCedula = buscarPorCedula(contacto.getCedula());
+		if(existeCedula != null) {
+			return false;
+		}else {
+			contactos.add(contacto);
+			return true;
+		}
+		
 	}
 	
 	public Contacto buscarPorCedula(String cedula) {
