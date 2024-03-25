@@ -44,9 +44,26 @@ public class Naipe {
 	}
 		
 	//METODOS
-	public void imprimirPrueba() {															//PRUEBA BORRAR
-		//System.out.println(cartas.get(10).mo);
-		cartas.get(13).mostrarInfoCarta();
+	
+	public ArrayList<Carta> barajar() {
+		ArrayList<Carta> auxiliar = new ArrayList<Carta>();
+		
+		for(int i = 1; i > 0; i++) {
+			int numRandom = Random.obtenerPosicion();
+			Carta cartaX = cartas.get(numRandom);
+			if(cartaX.getEstado().equals("N")) {
+				auxiliar.add(cartaX);
+				if(auxiliar.size() == 52) {
+					return auxiliar;
+				}
+			}
+		}
+		
+		
+		return null;
+		
 	}
+	
+	
 	
 }
