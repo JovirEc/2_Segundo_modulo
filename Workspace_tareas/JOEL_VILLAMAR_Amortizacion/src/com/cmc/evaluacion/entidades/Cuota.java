@@ -54,11 +54,11 @@ public class Cuota {
 	
 	//METODOS
 	public void mostrarPrestamo() {
-		System.out.println(numero+" | "+
-		Utilitario.redondear(cuota)+" | "+
-		Utilitario.redondear(inicio)+" | "+
-		Utilitario.redondear(interes)+" | "+
-		Utilitario.redondear(abonoCapital)+" | "+
+		System.out.println(numero+"  |  "+
+		Utilitario.redondear(cuota)+"  |  "+
+		Utilitario.redondear(inicio)+"  |  "+
+		Utilitario.redondear(interes)+"  |  "+
+		Utilitario.redondear(abonoCapital)+"  |  "+
 		Utilitario.redondear(saldo));
 	}
 	
