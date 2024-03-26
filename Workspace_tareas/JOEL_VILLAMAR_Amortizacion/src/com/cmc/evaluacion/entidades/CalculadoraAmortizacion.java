@@ -16,4 +16,8 @@ public class CalculadoraAmortizacion {
 		return cuota;
 	}
 	
+	public void generarTabla(Prestamo prestamo) {
+		double cuotas = calcularCuota(prestamo);
+		
+	}
 }
