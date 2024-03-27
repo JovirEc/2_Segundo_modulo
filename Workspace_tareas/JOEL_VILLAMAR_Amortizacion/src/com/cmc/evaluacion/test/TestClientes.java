@@ -1,7 +1,7 @@
 package com.cmc.evaluacion.test;
 
+import com.cmc.evaluacion.entidades.Banco;
 import com.cmc.evaluacion.entidades.Cliente;
-import com.cmc.evaluacion.servicios.Banco;
 
 public class TestClientes {
     public static void main(String[] args) {
@@ -14,13 +14,10 @@ public class TestClientes {
             banco.registrarCliente(cliente2);
            cliente2.mostrarCliente();
 
-           
-
           //  Intentar registrar un cliente duplicado
             Cliente cliente3 = new Cliente("1234567890", "Pedro", "Gomez");
             banco.registrarCliente(cliente3);
-            
-            
+           
         }
     }
 

@@ -42,4 +42,9 @@ public class Prestamo {
 		return cuotas;
 	}
 	
+	
+	//METODO
+	public void mostrarPrestamo() {
+		System.out.println("[monto="+monto+", interes="+interes+", plazo="+plazo);
+	}
 }
