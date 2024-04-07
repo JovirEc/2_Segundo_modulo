@@ -22,6 +22,7 @@ create table usuario_grupo (
 	constraint gr_id_fk foreign key (gr_id) references grupo(id),
 	constraint usuario_grupo_pk primary key (us_id,gr_id)
 )
+
 --HABITACIONES Y HUÉSPEDES
 create table habitaciones (
 	habitacion_numero int,
