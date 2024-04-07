@@ -73,8 +73,8 @@ create table proyecto(
 	constraint proyecto_pk primary key (id)
 )
 create table proyecto_municipio (
-	municipio_id int not null, --fk
 	proyecto_id int not null,
+	municipio_id int not null, --fk
 	constraint municipio_id_fk foreign key (municipio_id) references municipio(id),
 	constraint proyecto_id_fk foreign key (proyecto_id) references proyecto(id),
 	constraint proyecto_municipio_pk primary key (municipio_id,proyecto_id)
