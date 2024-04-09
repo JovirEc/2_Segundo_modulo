@@ -1,0 +1,7 @@
+1.- Descargar
+2.- Crear nuevo proyecto
+3.- Crear nueva carpeta en el proyecto con un Folder name: "lib"
+4.- Copiar y pegar "log4j-api-2.23.1" y "log4j-core-2.23.1
+5.-Clic derecho al proyecto - Propiedades - Java Build Path - Libraries
+6.- Clic en Modulepath - Add JARs...
+7.- Selecciono los dos archivos y aplicar y salir.
