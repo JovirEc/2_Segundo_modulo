@@ -1,0 +1,7 @@
+17:26:41.950 [main] INFO  com.krakedev.ejercicios.Admin - Ingresar a agregar
+17:28:32.652 [main] INFO  com.krakedev.ejercicios.Admin - Mensaje de info
+17:28:32.658 [main] WARN  com.krakedev.ejercicios.Admin - mensaje de warn
+17:28:32.659 [main] ERROR com.krakedev.ejercicios.Admin - mensaje de error
+17:28:40.259 [main] INFO  com.krakedev.ejercicios.Admin - Mensaje de info
+17:28:40.267 [main] WARN  com.krakedev.ejercicios.Admin - mensaje de warn
+17:28:40.267 [main] ERROR com.krakedev.ejercicios.Admin - mensaje de error

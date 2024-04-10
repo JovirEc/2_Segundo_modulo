@@ -28,7 +28,6 @@ public class TestConexion {
 			ps.setString(1, "5513616123");
 			ps.setString(2, "Rosalia");
 			ps.setString(3, "Andrade");
-			//ps.setDate(4, Date.valueOf("2000-5-5"));
 			ps.setString(4, "S");
 			ps.setInt(5, 2);
 			ps.setDouble(6, 1.56);
@@ -55,7 +54,6 @@ public class TestConexion {
 				System.out.println("ejecuta insert");
 				
 			} catch (ParseException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		} catch (ClassNotFoundException | SQLException e) {

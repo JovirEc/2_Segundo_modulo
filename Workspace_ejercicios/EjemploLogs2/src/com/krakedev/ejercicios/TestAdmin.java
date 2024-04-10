@@ -6,5 +6,4 @@ public class TestAdmin {
 		Admin admin = new Admin();
 		admin.agregar();
 	}
-
 }
