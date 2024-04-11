@@ -75,8 +75,29 @@ public class AdminProyectos {
 		}
 	}
 	
-	
-	
-	
-	
+	public static void eliminar(int i) throws Exception {
+		Connection con = null;
+		PreparedStatement ps;
+		LOGGER.trace("Codigo Proyecto a eliminar >>> "+i);
+		
+		try {
+			con = ConexionBDD.conectar();
+			
+			ps = con.prepareStatement("delete from proyecto where id = ?");
+			ps.setInt(1, i);
+			ps.executeUpdate();
+
+		} catch (Exception e) {
+			LOGGER.error("Error al eliminar",e);
+			throw new Exception("Error al eliminar");
+			
+		} finally {
+			try {
+			con.close();
+			} catch (SQLException e) {
+			LOGGER.error("Error con la base de datos",e);
+			throw new Exception("Error con la base de datos");
+			}
+		}
+	}
 }
