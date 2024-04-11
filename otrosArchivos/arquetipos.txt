@@ -1,0 +1,7 @@
+
+
+---JUNIT5 ARCHETYPE---
+Group ID: uk.co.markg.archetypes
+Artfiact ID: java11-junit5
+Version: 1.0
+URL: https://repo1.maven.org/maven2
