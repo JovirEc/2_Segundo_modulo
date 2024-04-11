@@ -22,9 +22,9 @@ public class TestAdminPersona {
 			p.setNumeroHijos(50);
 			AdminPersonas.insertar(p);
 		} catch (Exception e) {
-
-			e.printStackTrace();
-			System.out.println(e.getMessage());
+			
+			//e.printStackTrace();
+			System.out.println("error en el sistema: "+e.getMessage());
 		}
 		
 		

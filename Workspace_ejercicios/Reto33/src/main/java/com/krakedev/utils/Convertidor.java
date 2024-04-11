@@ -1,4 +1,4 @@
-package com.krakedev.persistencia.utils;
+package com.krakedev.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
