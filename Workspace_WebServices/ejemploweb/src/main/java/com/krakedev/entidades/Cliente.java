@@ -10,10 +10,11 @@ public class Cliente {
 	public Cliente() {
 		super();
 	}
-	public Cliente(String cedula, String nombre) {
+	public Cliente(String cedula, String nombre, int numeroHijos) {
 		super();
 		this.cedula = cedula;
 		this.nombre = nombre;
+		this.numeroHijos = numeroHijos;
 		
 	}
 	
@@ -39,8 +40,10 @@ public class Cliente {
 	
 	@Override
 	public String toString() {
-		return "Cliente [cedula=" + cedula + ", nombre=" + nombre + "]";
+		return "Cliente [cedula=" + cedula + ", nombre=" + nombre + ", numeroHijos=" + numeroHijos + "]";
 	}
+	
+	
 	
 	
 	
